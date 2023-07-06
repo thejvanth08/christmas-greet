@@ -1,0 +1,54 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Hind:wght@300;400;600;700&family=Leckerli+One&family=Poppins:wght@400;500;600&display=swap");
+
+/* Variables */
+:root {
+  --header-height: 3.5rem;
+  --animate-snow-1: animate-snow-1 5s infinte ease-in-out;
+  --animate-snow-2: animate-snow-2 5s infinte ease-in-out;
+
+  /* Colors */
+  --first-color: hsl(210, 80%, 54%);
+  --first-color-alt: hsl(210, 80%, 50%);
+  --title-color: hsl(210, 24%, 90%);
+  --text-color: hsl(210, 16%, 70%);
+  --white-color: #fff;
+  --body-color: hsl(210, 32%, 4%);
+
+  /* Font & Typegraphy */
+  --body-font: "Dancing Script", cursive;
+  --second-font: "Poppins", sans-serif;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /* Font weight */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* Z index */
+  --z-tooltip: 10;
+  --z-fixed: 1000;
+}
+
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Base */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
