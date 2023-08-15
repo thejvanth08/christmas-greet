@@ -575,7 +575,228 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
+@media screen and (min-width: 576px) {
+  .home-village {
+    width: 360px;
+  }
+
+  .home-pine {
+    width: 330px;
+  }
+
+  .about-container,
+  .celebrate-container {
+    grid-template-columns: 0.7fr;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .nav-toggle,
+  .nav-close,
+  .nav-img-1,
+  .nav-img-2 {
+    display: none;
+  }
+
+  /* only nav links */
+  .nav-list {
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+
+  .home {
+    height: 800px;
+  }
+
+  .home-village {
+    width: 460px;
+  }
+
+  .home-pine {
+    width: 460px;
+    bottom: 7rem;
+  }
+
+  .home-moon {
+    width: 450px;
+    bottom: 12rem;
+  }
+
+  .home-trineo {
+    width: 350px;
+    bottom: 20rem;
+  }
+
+  .send-container {
+    grid-template-columns: repeat(2, 200px);
+    column-gap: 5rem;
+  }
+}
 
 /* For large devices */
+@media screen and (min-width: 1024px) {
+  .section {
+    padding-block: 7rem 3rem;
+  }
+
+  .container {
+    margin-inline: auto;
+  }
+
+  .home-title {
+    font-size: 4rem;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .about-container {
+    grid-template-columns: 500px 400px;
+    align-items: center;
+    column-gap: 6rem;
+  }
+
+  .about-data,
+  .about-data .section-title {
+    text-align: initial;
+  }
+
+  .about-img {
+    width: 500px;
+    /* order of grid item */
+    order: -1;
+  }
+
+  .about-snow-1 {
+    top: -3rem;
+    left: 0;
+  }
+
+  .about-snow-2 {
+    right: 10rem;
+    bottom: 1.5rem;
+  }
+
+  .send-container {
+    grid-template-columns: repeat(3, 220px);
+    column-gap: 7.5rem;
+    padding-top: 3rem;
+  }
+
+  .send-img {
+    margin-bottom: 1rem;
+  }
+
+  .send-description {
+    font-size: var(--normal-font-size);
+  }
+
+  .send-snow-1 {
+    left: -2rem;
+    top: 0;
+  }
+
+  .send-snow-3 {
+    bottom: -2rem;
+    left: 25rem;
+  }
+
+  .celebrate-container {
+    grid-template-columns: 400px 500px;
+    align-items: center;
+    column-gap: 6rem;
+  }
+
+  .celebrate-data,
+  .celebrate-data .section-title {
+    text-align: initial;
+  }
+
+  .celebrate-img {
+    width: 500px'
+  }
+
+  .celebrate-snow-1 {
+    top: 2.5rem;
+    left: 14rem;
+  }
+
+  .celebrate-snow-2 {
+    right: 2rem;
+  }
+
+  .footer-container {
+    padding-block: 5.5rem 3rem;
+  }
+
+  .footer-social {
+    column-gap: 2rem;
+  }
+
+  .footer-social-link {
+    font-size: 1.5rem;
+  }
+
+  .footer-copy {
+    margin-top: 3rem;
+  }
+
+  .scroll-up {
+    right: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  
+  .home {
+    height: 900px;
+  }
+
+  .home-title {
+    font-size: var(--biggest-font-size);
+  }
+
+  /* to fill the screen, else it will leave margin or padding for very large screens */
+  .home-mountain-1,
+  .home-mountain-2,
+  .home-mountain-3,
+  .home-snow {
+    width: 100%;
+  }
+
+  .home-village {
+    width: 750px;
+    bottom: 4rem;
+  }
+
+  .home-pine {
+    width: 720px;
+    bottom: 12.5rem;
+  }
+
+  .home-mountain-1,
+  .home-mountain-2 {
+    bottom: -5rem;
+  }
+
+  .home-moon {
+    width: 600px;
+    bottom: 11rem;
+  }
+
+  .home-trineo {
+    width: 500px;
+    bottom: 28rem;
+  }
+}
 
 /* For 2K+ resolutions */
+@media screen and (min-width: 1700px) {
+  .home {
+    max-width: 1280px;
+    height: 990px;
+    margin-inline: auto;
+  }
+}

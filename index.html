@@ -8,6 +8,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- Scroll reveal animation -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>Happy Christmas!</title>
   </head>
@@ -56,13 +58,38 @@
       <section class="home section" id="home">
         <h1 class="home-title">Merry Christmas</h1>
         <!-- it stacks in the order of the code, last element in the top -->
-        <img class="home-moon" src="img/home-moon.png" alt="" />
-        <img class="home-trineo" src="img/home-trineo-santa.png" alt="" />
-        <img class="home-mountain-3" src="img/home-mountain-3.png" alt="" />
-        <img class="home-mountain-2" src="img/home-mountain-2.png" alt="" />
-        <img class="home-pine" src="img/home-pine-tree.png" alt="" />
-        <img class="home-village" src="img/home-village.png" alt="" />
-        <img class="home-snow" src="img/home-snow.png" alt="" />
+        <img
+          class="home-moon parallax"
+          data-rellax-speed="-15"
+          src="img/home-moon.png"
+          alt=""
+        />
+        <img
+          class="home-trineo parallax"
+          data-rellax-speed="-2"
+          src="img/home-trineo-santa.png"
+          alt=""
+        />
+        <img
+          class="home-mountain-3 parallax"
+          data-rellax-speed="-8"
+          src="img/home-mountain-3.png"
+          alt=""
+        />
+        <img
+          class="home-mountain-2 parallax"
+          data-rellax-speed="-8"
+          src="img/home-mountain-2.png"
+          alt=""
+        />
+        <img
+          class="home-pine parallax"
+          data-rellax-speed="-10"
+          src="img/home-pine-tree.png"
+          alt=""
+        />
+        <img class="home-village parallax" src="img/home-village.png" alt="" />
+        <img class="home-snow parallax" src="img/home-snow.png" alt="" />
         <img class="home-mountain-1" src="img/home-mountain-1.png" alt="" />
       </section>
 
@@ -85,105 +112,134 @@
             <a href="" class="btn">Send Gift</a>
           </div>
 
-          <img src="img/about-christmas.png" alt="" />
+          <img class="about-img" src="img/about-christmas.png" alt="" />
 
           <img class="about-snow-1" src="img/snow-img.png" alt="" />
           <img class="about-snow-2" src="img/snow-img.png" alt="" />
         </div>
       </section>
-    
 
-    <!-- Send -->
-    <section class="send section" id="send">
-      <h2 class="section-title">
-        Send Love this <br>
-        Christmas
-      </h2>
+      <!-- Send -->
+      <section class="send section" id="send">
+        <h2 class="section-title">
+          Send Love this <br />
+          Christmas
+        </h2>
 
-      <div class="send-container container grid">
-        <div class="send-card">
-          <img class="send-night" src="img/send-night.png" alt="">
-          <h3 class="send-title">Spend it with family</h3>
-          <p class="send-description">
-            Sharing with family is the best gift you can give.
-          </p>
+        <div class="send-container container grid">
+          <div class="send-card">
+            <img class="send-night" src="img/send-night.png" alt="" />
+            <h3 class="send-title">Spend it with family</h3>
+            <p class="send-description">
+              Sharing with family is the best gift you can give.
+            </p>
+          </div>
+
+          <div class="send-card">
+            <img class="send-night" src="img/send-gifts.png" alt="" />
+            <h3 class="send-title">Give lots of love</h3>
+            <p class="send-description">
+              Send a gift and a lot of love to those most in need.
+            </p>
+          </div>
+
+          <div class="send-card">
+            <img class="send-night" src="img/send-santa.png" alt="" />
+            <h3 class="send-title">Share Good Wishes</h3>
+            <p class="send-description">
+              Wish good messages to loved ones this Christmas.
+            </p>
+          </div>
+
+          <img src="img/snow-img.png" alt="" class="send-snow-1" />
+          <img src="img/snow-img.png" alt="" class="send-snow-2" />
+          <img src="img/snow-img.png" alt="" class="send-snow-3" />
         </div>
-        
-        <div class="send-card">
-          <img class="send-night" src="img/send-gifts.png" alt="">
-          <h3 class="send-title">Give lots of love</h3>
-          <p class="send-description">
-            Send a gift and a lot of love to those most in need.
-          </p>
-        </div>
+      </section>
 
-        <div class="send-card">
-          <img class="send-night" src="img/send-santa.png" alt="">
-          <h3 class="send-title">Share Good Wishes</h3>
-          <p class="send-description">
-            Wish good messages to loved ones this Christmas.
-          </p>
+      <!-- Celebrate -->
+      <section class="celebrate section" id="celebrate">
+        <div class="celebrate-container container grid">
+          <div class="celebrate-data">
+            <h2 class="section-title">
+              Celebrate with a <br />
+              Lot of Love
+            </h2>
+            <p class="celebrate-description">
+              In this holidays, celebrate with much love and peace, offering
+              many blessings to our loved ones, friends and neighbors, wishing
+              them a good Christmas message.
+            </p>
+            <a class="btn" href="#">Celebrate now</a>
+          </div>
+          <img class="celebrate-church" src="img/celebarte-church.png" alt="" />
+          <img class="celebrate-snow-1" src="img/snow-img.png" alt="" />
+          <img class="celebrate-snow-2" src="img/snow-img.png" alt="" />
         </div>
+      </section>
+    </main>
 
-        <img src="img/snow-img.png" alt="" class="send-snow-1">
-        <img src="img/snow-img.png" alt="" class="send-snow-2">
-        <img src="img/snow-img.png" alt="" class="send-snow-3">
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container container">
+        <a href="#" class="footer-logo">Christmas</a>
+
+        <ul class="footer-social">
+          <li>
+            <a href="#" class="footer-social-link"
+              ><i class="ri-meta-fill"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-social-link"
+              ><i class="ri-whatsapp-line"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-social-link"
+              ><i class="ri-instagram-line"></i
+            ></a>
+          </li>
+        </ul>
+
+        <span class="footer-copy">
+          &copy; Copyright Thejvanth. All rights reserverd.
+        </span>
+        <img class="footer-snow-1" src="img/snow-img.png" alt="" />
+        <img class="footer-snow-2" src="img/snow-img.png" alt="" />
       </div>
-    </section>
+    </footer>
 
-    <!-- Celebrate -->
-    <section class="celebrate section" id="celebrate">
-      <div class="celebrate-container container grid">
-        <div class="celebrate-data">
-          <h2 class="section-title">
-            Celebrate with a <br>
-            Lot of Love
-          </h2>
-          <p class="celebrate-description">
-            In this holidays, celebrate with much love and peace,
-            offering many blessings to our loved ones, friends
-            and neighbors, wishing them a good Christmas message.
-          </p>
-          <a class="btn" href="#">Celebrate now</a>
-        </div>
-        <img class="celebrate-church" src="img/celebarte-church.png" alt="">
-        <img class="celebrate-snow-1" src="img/snow-img.png" alt="">
-        <img class="celebrate-snow-2" src="img/snow-img.png" alt="">
-      </div>
-    </section>
-  </main>
+    <!-- Scroll up -->
+    <a class="scroll-up" id="scroll-up" href="#">
+      <i class="ri-arrow-up-line"></i>
+    </a>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container container">
-      <a href="#" class="footer-logo">Christmas</a>
+    <!-- Relax js -->
+    <script src="js/relax.min.js"></script>
+    <!-- Gsap animation -->
+    <script src="js/gsap.min.js"></script>
+    <!-- Scroll Reveal animation -->
+    <script>
+      // Scroll reveal animation
+      // creating object, props will be common to all elements to which this anime is applied
+      const sr = ScrollReveal({
+        origin: "top",
+        distance: "60px",
+        duration: 2500,
+        delay: 500,
+      });
 
-      <ul class="footer-social">
-        <li>
-          <a href="#" class="footer-social-link"><i class="ri-meta-fill"></i></a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-social-link"><i class="ri-whatsapp-line"></i></a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-social-link"><i class="ri-instagram-line"></i></a>
-        </li>
-      </ul>
-
-      <span class="footer-copy">
-        &copy; Copyright Thejvanth. All rights reserverd.
-      </span>
-      <img class="footer-snow-1" src="img/snow-img.png" alt="">
-      <img class="footer-snow-2" src="img/snow-img.png" alt="">
-    </div>
-  </footer>
-
-  <!-- Scroll up -->
-  <a class="scroll-up" id="scroll-up" href="#">
-    <i class="ri-arrow-up-line"></i>
-  </a>
-    <script src="script.js"></script>
+      sr.reveal(".about-data, .celebrate-church", {
+        origin: "right",
+      });
+      sr.reveal(".about-img, .celebrate-data", { origin: "left" });
+      sr.reveal(".send-card", { interval: 100 });
+      sr.reveal(".footer");
+    </script>
+    <!-- Normal script -->
+    <script src="js/script.js"></script>
   </body>
 </html>
