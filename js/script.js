@@ -44,7 +44,120 @@ gsap.from(".home-pine", 1.2, { opacity: 0, y: 150, delay: 0.3 });
 gsap.from(".home-moutain-2", 1.2, { opacity: 0, x: 150, delay: 0.5 });
 gsap.from(".home-moutain-3", 1.2, { opacity: 0, x: -150, delay: 0.6 });
 gsap.from(".home-moutain-1", 1.2, { opacity: 0, y: 250, delay: 0.7 });
-gsap.from(". home-moon", 1.2, { opacity: 0, y: 200, delay: 0.8 });
-gsap.from(". home-trineo", 1.2, { opacity: 0, x: -200, delay: 0.8 });
-gsap.from(". home-title", 1.2, { opacity: 0, y: -60, delay: 1 });
+gsap.from(".home-moon", 1.2, { opacity: 0, y: 200, delay: 0.8 });
+gsap.from(".home-trineo", 1.2, { opacity: 0, x: -200, delay: 0.8 });
+gsap.from(".home-title", 1.2, { opacity: 0, y: -60, delay: 1 });
 
+// Particles js animation
+document.addEventListener("DOMContentLoaded", function () {
+  particlesJS("particles-js", {
+    particles: {
+      number: {
+        value: 600,
+        density: {
+          enable: true,
+          value_area: 2441.9062623079944,
+        },
+      },
+      color: {
+        value: "#fff",
+      },
+      shape: {
+        type: "circle",
+        stroke: {
+          width: 0,
+          color: "#000000",
+        },
+        polygon: {
+          nb_sides: 5,
+        },
+        image: {
+          src: "img/github.svg",
+          width: 100,
+          height: 100,
+        },
+      },
+      opacity: {
+        value: 0.33,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: false,
+        },
+      },
+      size: {
+        value: 7.877116975187079,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 40,
+          size_min: 0.1,
+          sync: false,
+        },
+      },
+      line_linked: {
+        enable: false,
+        distance: 500,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 2,
+      },
+      move: {
+        enable: true,
+        speed: 6,
+        direction: "bottom",
+        random: false,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200,
+        },
+      },
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: {
+          enable: true,
+          mode: "bubble",
+        },
+        onclick: {
+          enable: true,
+          mode: "repulse",
+        },
+        resize: true,
+      },
+      modes: {
+        grab: {
+          distance: 400,
+          line_linked: {
+            opacity: 0.5,
+          },
+        },
+        bubble: {
+          distance: 400,
+          size: 4,
+          duration: 0.3,
+          opacity: 1,
+          speed: 3,
+        },
+        repulse: {
+          distance: 200,
+          duration: 0.4,
+        },
+        push: {
+          particles_nb: 4,
+        },
+        remove: {
+          particles_nb: 2,
+        },
+      },
+    },
+    retina_detect: true,
+  });
+});

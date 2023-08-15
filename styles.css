@@ -67,6 +67,8 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  /* to make particles (canvas) and body elements as stacked layers */
+  position: relative;
 }
 
 h1,
@@ -571,6 +573,16 @@ img {
 /* Show Scroll Up */
 .show-scroll {
   bottom: 3rem;
+}
+
+/* Particles js animation */
+/* the particles are diplayed in canvas
+   it will be present in seperate element which makes layout distrubed
+   to make it display on background -> make it as backward layer */
+.particles-js-canvas-el {
+  height: 100vh;
+  position: absolute;
+  z-index: 10000;
 }
 
 /*=============== BREAKPOINTS ===============*/
