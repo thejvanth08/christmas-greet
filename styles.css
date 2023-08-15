@@ -103,6 +103,7 @@ img {
 .section {
   padding-block: 5rem 1rem;
 }
+
 .section-title {
   font-size: var(--h1-font-size);
   font-family: var(--second-font);
@@ -119,12 +120,15 @@ img {
   0%,
   100% {
     /* transform: rotate(); */
+    /* get small at start and end */
     transform: scale(0.5);
   }
   50% {
+    /* get normal size at middle */
     transform: scale(1);
   }
 }
+
 @keyframes animate-snow-2 {
   0%,
   100% {
@@ -243,27 +247,331 @@ img {
 .show-menu {
   top: 0;
 }
+
 /* Change background header */
+.bg-header {
+  background-color: var(--body-color);
+}
 
 /* Active link */
 
 /*=============== HOME ===============*/
+.home {
+  position: relative;
+  background-image: linear-gradient(
+    180deg,
+    hsl(210, 88%, 20%),
+    hsl(210, 70%, 58%)
+  );
+  height: 650px;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.home-title {
+  color: var(--white-color);
+  font-size: var(--biggest-font-size);
+  font-family: var(--second-font);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.home img {
+  /* relative to home container */
+  position: absolute;
+}
+
+.home-mountain-1,
+.home-snow {
+  bottom: 0;
+}
+
+.home-village,
+.home-pine,
+.home-moon,
+.home-trineo {
+  /* to center it perfectly */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.home-village {
+  width: 260px;
+  bottom: 1rem;
+}
+
+.home-pine {
+  width: 250px;
+  bottom: 4rem;
+}
+
+.home-mountain-2 {
+  bottom: 3rem;
+}
+
+.home-mountain-3 {
+  bottom: 0rem;
+}
+
+.home-moon {
+  width: 300px;
+  bottom: 8.5rem;
+}
+
+.home-trineo {
+  width: 250px;
+  bottom: 14.5rem;
+}
 
 /*=============== ABOUT ===============*/
+.about-container {
+  position: relative;
+  row-gap: 3.5rem;
+}
+
+.about-data {
+  text-align: center;
+}
+
+.about-description {
+  margin-bottom: 2rem;
+}
+
+.about-img {
+  width: 320px;
+  justify-self: center;
+}
+
+.about-snow-1,
+.about-snow-2 {
+  width: 50px;
+  position: absolute;
+}
+
+.about-snow-1 {
+  top: 0;
+  left: 1.5rem;
+  animation: var(--animate-snow-1);
+}
+
+.about-snow-2 {
+  right: 0;
+  bottom: 0.5rem;
+  animation: var(--animate-snow-2);
+}
 
 /*=============== BUTTON ===============*/
+.btn {
+  display: inline-block;
+  background-color: var(--first-color);
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+  transition: background 0.4s, box-shadow 0.4s;
+}
+
+.btn:hover {
+  background-color: var(--first-color-alt);
+  box-shadow: 0 8px 32px hsla(210, 80%, 54%, 0.7);
+}
 
 /*=============== SEND ===============*/
+.send-container {
+  position: relative;
+  grid-template-columns: 200px;
+  justify-content: center;
+  row-gap: 3rem;
+  padding-top: 1.5rem;
+}
+
+.send-card {
+  text-align: center;
+}
+
+.send-img {
+  width: 180px;
+  margin-bottom: 0.75rem;
+}
+
+.send-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.send-description {
+  font-size: var(--small-font-size);
+  padding-inline: 1.5rem;
+}
+
+.send-snow-1,
+.send-snow-2,
+.send-snow-3 {
+  width: 50px;
+  position: absolute;
+}
+
+.send-snow-1 {
+  left: 0;
+  top: 7rem;
+  animation: var(--animate-snow-1);
+}
+
+.send-snow-2 {
+  top: 23rem;
+  right: 0;
+  animation: var(--animate-snow-2);
+}
+
+.send-snow-3 {
+  bottom: 9rem;
+  left: 0;
+  animation: var(--animate-snow-1);
+}
 
 /*=============== CELEBRATE ===============*/
+.celebrate-container {
+  position: relative;
+  row-gap: 3.5rem;
+}
+
+.celebrate-data {
+  text-align: center;
+}
+
+.celebrate-description {
+  margin-bottom: 2rem;
+}
+
+.celebrate-img {
+  width: 320px;
+  justify-self: center;
+}
+
+.celebrate-snow-1,
+.celebrate-snow-2 {
+  width: 50px;
+  position: absolute;
+}
+
+.celebrate-snow-1 {
+  top: 1.5rem;
+  left: 1.5rem;
+  animation: var(--animate-snow-1);
+}
+
+.celebrate-snow-2 {
+  bottom: 1.2rem;
+  right: 0;
+  animation: var(--animate-snow-2);
+}
 
 /*=============== FOOTER ===============*/
+.footer {
+  overflow: hidden;
+}
+
+.footer-container {
+  position: relative;
+  padding-block: 4.5rem 2rem;
+  text-align: center;
+}
+
+.footer-logo,
+.footer-social-link,
+.footer-copy {
+  color: var(--white-color);
+}
+
+.footer-logo {
+  display: inline-block;
+  font-size: var(--h2-font-size);
+  font-family: var(--second-font);
+  margin-bottom: 1rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+
+.footer-social-link {
+  font-size: 1.25rem;
+  transition: color 0.3s;
+}
+
+.footer-social-link:hover {
+  color: var(--first-color);
+}
+
+.footer-copy {
+  display: block;
+  margin-top: 2rem;
+  font-size: var(--small-font-size);
+}
+
+.footer-snow-1,
+.footer-snow-2 {
+  position: absolute;
+}
+
+.footer-snow-1 {
+  width: 50px;
+  top: 4.5rem;
+  left: 0;
+  animation: var(--animate-snow-1);
+}
+
+.footer-snow-2 {
+  width: 40px;
+  bottom: 1rem;
+  right: 0;
+  animation: var(--animate-snow-2);
+}
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(210, 8%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(210, 8%, 25%);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(210, 8%, 35%);
+  border-radius: 0.5rem;
+}
 
 /*=============== SCROLL UP ===============*/
+.scroll-up {
+  position: fixed;
+  right: 1rem;
+  /* to hide it */
+  bottom: -50%;
+  background-color: var(--white-color);
+  display: inline-flex;
+  padding: 0.45rem;
+  border-radius: 0.45rem;
+  font-size: 1rem;
+  color: var(--body-color);
+  z-index: var(--z-tooltip);
+  transition: bottom 0.3s, transform 0.3s;
+}
+
+.scroll-up:hover {
+  transform: translateY(-0.25rem);
+}
 
 /* Show Scroll Up */
+.show-scroll {
+  bottom: 3rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
