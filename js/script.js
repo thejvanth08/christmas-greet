@@ -33,7 +33,23 @@ const scrollUp = () => {
 
 window.addEventListener("scroll", scrollUp);
 
-// Parallax
+// Scroll reveal animations
+// creating object, props will be common to all elements to which this anime is applied
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 500,
+});
+
+sr.reveal(".about-data, .celebrate-church", {
+  origin: "right",
+});
+sr.reveal(".about-img, .celebrate-data", { origin: "left" });
+sr.reveal(".send-card", { interval: 100 });
+sr.reveal(".footer");
+
+// Parallax animations
 // accepts class as arg -> passed to constructor
 // the elements with "parallax" class is converted into parallax objects
 let Parallax = new Rellax(".parallax");
@@ -48,7 +64,7 @@ gsap.from(".home-moon", 1.2, { opacity: 0, y: 200, delay: 0.8 });
 gsap.from(".home-trineo", 1.2, { opacity: 0, x: -200, delay: 0.8 });
 gsap.from(".home-title", 1.2, { opacity: 0, y: -60, delay: 1 });
 
-// Particles js animation
+// Particles js animations
 document.addEventListener("DOMContentLoaded", function () {
   particlesJS("particles-js", {
     particles: {

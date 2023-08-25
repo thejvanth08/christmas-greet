@@ -7,7 +7,7 @@
   --animate-snow-1: animate-snow-1 5s infinite ease-in-out;
   --animate-snow-2: animate-snow-2 5s infinite ease-in-out;
 
-  /*========== Colors ==========*/
+  /* ========== Colors ========== */
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(210, 80%, 54%);
   --first-color-alt: hsl(210, 80%, 50%);
@@ -38,7 +38,7 @@
   --z-fixed: 100;
 }
 
-/* Responsive typography */
+/* Fonts for larger screen */
 @media screen and (min-width: 1024px) {
   :root {
     --biggest-font-size: 5rem;
@@ -582,7 +582,11 @@ img {
 .particles-js-canvas-el {
   height: 100vh;
   position: absolute;
-  z-index: 10000;
+  /* don't set higher than 100 -> else it makes the fixed navbar & scrollup unclickable  */
+  z-index: 1000;
+  /* this makes canvas to not to respond with cursor -> can't interact with particles elements
+  this makes users to interact with other elements */
+  pointer-events: none;
 }
 
 /*=============== BREAKPOINTS ===============*/

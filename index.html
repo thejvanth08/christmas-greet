@@ -19,6 +19,7 @@
   <body>
     <!-- it will expand through out the body -->
     <div id="particles-js"></div>
+
     <!-- Header -->
     <header class="header" id="header">
       <nav class="nav container">
@@ -227,25 +228,6 @@
 
     <!-- Gsap animation -->
     <script src="js/gsap.min.js"></script>
-
-    <!-- Scroll Reveal animation -->
-    <script>
-      // Scroll reveal animation
-      // creating object, props will be common to all elements to which this anime is applied
-      const sr = ScrollReveal({
-        origin: "top",
-        distance: "60px",
-        duration: 2500,
-        delay: 500,
-      });
-
-      sr.reveal(".about-data, .celebrate-church", {
-        origin: "right",
-      });
-      sr.reveal(".about-img, .celebrate-data", { origin: "left" });
-      sr.reveal(".send-card", { interval: 100 });
-      sr.reveal(".footer");
-    </script>
 
     <!-- Normal script -->
     <script src="js/script.js"></script>
